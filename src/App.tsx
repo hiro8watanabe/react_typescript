@@ -22,8 +22,9 @@ export const App = () => {
   return (
     <div className="App">
       <button onClick={onClickFetchData}>データ取得</button>
-      {todos.map((todo,index) => (
-        <Todo key={index}
+      {todos.map((todo) => (
+        <Todo
+          key={todo.id}
           title={todo.title}
           userId={todo.userId}
           completed={todo.completed}
