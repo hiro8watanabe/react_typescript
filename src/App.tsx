@@ -22,8 +22,8 @@ export const App = () => {
   return (
     <div className="App">
       <button onClick={onClickFetchData}>データ取得</button>
-      {todos.map((todo) => (
-        <Todo
+      {todos.map((todo,index) => (
+        <Todo key={index}
           title={todo.title}
           userId={todo.userId}
           completed={todo.completed}
